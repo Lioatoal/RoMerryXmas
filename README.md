@@ -1,8 +1,10 @@
-# [RAGNAROK ONLINE](https://ro.gnjoy.com.tw/) - French~☆*Kiss - RoMerryXmas
+# [RAGNAROK ONLINE](https://ro.gnjoy.com.tw/) - French~☆*Kiss - [RoMerryXmas](https://gp7ukkae.github.io/RoMerryXmas/)
 
 French~☆*Kiss is a Association of the Rangnarok Online Game. The project is created for exchanging gifts on Christmas day.The project provides lottery function to make a pair for every Game ID.
 
 ## Getting Started
+
+https://gp7ukkae.github.io/RoMerryXmas/
 
 To use this Web application, follow the steps below:
 * Hands together and gratitude ㄈㄓ's strong. 
