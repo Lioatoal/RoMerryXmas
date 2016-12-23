@@ -2,30 +2,42 @@ $(function() {
     var url = "https://dl.dropboxusercontent.com/s/jpsxwvll7m5mepy/ID_list.json"
     // var url = "file:///C:/Users/5600/Desktop/RoMerryXmas-master/ID_list.json"
 
-    var ID_list = $.getJSON(url, function(d) {
-                ID_list = ID_list.responseJSON;
+    var list = $.getJSON(url, function(d) {
+                list = list.responseJSON;
             });
 
     $("#contactForm").submit( function(event){
             // get values from FORM
             var name = $("input#name").val();
+            var error = true;
             
-            if (name == ID_list.ID) 
+            if (name) 
             { 
-                $("#contact").hide();
-                $(".intro-text").hide();
-                // $(".col-lg-12").animate({height:"500px"});
-                $(".img-responsive").animate
-                (
-                    {height:"300px"},
-                    5000,
-                    function(){
-                        alert("Your number is"+ 15);
-                    }
-                );
+                ID = list.ID.split("/");
+                NUM = list.Number;
 
+                for(var i in ID){
+                    if (name == ID[i]) {
+
+                        $("#contact").hide();
+                        $(".intro-text").hide();
+                        $(".img-responsive").animate
+                        (
+                            {height:"300px"},
+                            5000,
+                            function(){
+                                alert("Your number is"+ NUM[i]);
+                            }
+                        );
+                        error = false;
+                        break;
+                    }
+                }
+                if (error){
+                    alert("No this man, please try again");
+                }
             } else {
-                alert("no this man");
+                alert("Please key in your RO ID");
             }
             event.preventDefault();
     });
