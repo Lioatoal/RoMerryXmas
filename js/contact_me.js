@@ -14,7 +14,7 @@ $(function() {
             if (name) 
             { 
                 ID = list.ID.split("/");
-                NUM = list.Number;
+                NUM = list.Number.split("/");
 
                 for(var i in ID){
                     if (name == ID[i]) {
@@ -26,7 +26,7 @@ $(function() {
                             {height:"300px"},
                             5000,
                             function(){
-                                alert("Your number is"+ NUM[i]);
+                                alert("Your Gift Number is  "+ NUM[i]);
                             }
                         );
                         error = false;
