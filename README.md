@@ -1,26 +1,21 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Freelancer](http://startbootstrap.com/template-overviews/freelancer/)
+# [RAGNAROK ONLINE](https://ro.gnjoy.com.tw/) - French~☆*Kiss - RoMerryXmas
 
-[Freelancer](http://startbootstrap.com/template-overviews/freelancer/) is a one page freelancer portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, and a working PHP contact form.
+French~☆*Kiss is a Association of the Rangnarok Online Game. The project is created for exchanging gifts on Christmas day.The project provides lottery function to make a pair for every Game ID.
 
 ## Getting Started
 
-To use this theme, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+To use this Web application, follow the steps below:
+* Hands together and gratitude ㄈㄓ's strong. 
+* Enter your RO ID and to pray.
+* Be thankful for the gift you received.
+* Wish everone a merry Christmas.
 
 ## Bugs and Issues
 
-Have a bug or an issue with this theme? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-freelancer/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/freelancer/).
+Have a bug or an issue with this theme? [Open a new issue](https://github.com/gp7ukkae/RoMerryXmas/issues) here on GitHub.
 
 ## Creator
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
+RoMerryXmas was created by and is maintained by [**SYC.**](https://github.com/gp7ukkae) & [**Roy**](https://github.com/Royalor), 
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-freelancer/blob/gh-pages/LICENSE) license.
+RoMerryXmas is based on the [Start Bootstrap](https://startbootstrap.com/) framework created by [David Miller](https://github.com/davidtmiller).
