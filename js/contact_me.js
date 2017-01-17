@@ -10,6 +10,8 @@ $(function() {
     messagingSenderId: "117864251524"
     };
     firebase.initializeApp(config);
+    $("#contact").hide();
+    $("#portfolio").hide();
 
     var database = firebase.database();
     var initStatus, maxNum, registerNum = 0;
@@ -20,29 +22,31 @@ $(function() {
         if(initStatus){
             database.ref('giftContor/maxNum').on('value', function(snapshot){
                 maxNum = snapshot.val();
-                if (registerNum == maxNum){
-                    getFull(2);
+                if (registerNum >= maxNum){
+                    getStatus(2);
                 }
             });
 
             database.ref('giftList/').on('value', function(snapshot){
                 giftList = snapshot.val();
                 registerNum = Object.values(giftList).length;
-                if (registerNum == maxNum){
-                    getFull(2);
+                if (registerNum >= maxNum){
+                    getStatus(2);
                 } else {
-                    getFull(0);
+                    getStatus(0);
                 }
             });
         } else {
             errorMsg(0);
-            getFull(1);
+            getStatus(1);
             return;
         }
     });
 
     $("#init_default").click(function(){
-        Init();
+        if(!initStatus){
+            Init();
+        }
     })
 
     $("#contactForm").submit( function(event){
@@ -143,8 +147,11 @@ $(function() {
         Num = Math.floor(Math.random()*maxNum);
     }
 
-    //TODO Full Register, 0 = not full, 1 = not initialize, 2 = ready to run
-    function getFull(flag){
+    //TODO get system status, 
+    // 0 = Registering not full, 
+    // 1 = not initialize, 
+    // 2 = Registering full and ready to run.
+    function getStatus(flag){
         switch(flag){
             case 0:
                 $("#contact").show();
@@ -152,9 +159,12 @@ $(function() {
                 break;
             case 1:
                 $("#contact").hide();
-                $("#portfolio").hide();  
+                $("#portfolio").hide(); 
+                break; 
             case 2:
                 $("#contact").hide();
+                $("#portfolio").show();
+                break;
         }
     }
 });
